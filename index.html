@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>javascript Learn</title>
+</head>
+<body>
+    
+    <div class="main">
+        <form action="" name ="form" class="displayForm">
+            <input class="form-control text-right" type="text" name="display" value =" " placeholder="0" id="eForm">
+            <div class="inputSection"> 
+                <input class ="btn btn-info" type="button" name="btn" value="7" onclick="calculate(this.value)">
+                <input class="btn btn-info" type="button" name="" value="8" onclick="calculate(this.value)">
+                <input class="btn btn-info" type="button" name="" value="9" onclick="calculate(this.value)">
+                <input class="btn btn-warning" type="button" name="" value="*" onclick="calculate(this.value)">
+                
+            </div>
+
+             <div class="inputSection">
+                 <input class="btn btn-info" type="button" name="" value="4" onclick="calculate(this.value)">
+                 <input class="btn btn-info" type="button" name="" value="5" onclick="calculate(this.value)">
+                 <input class="btn btn-info" type="button" name="" value="6" onclick="calculate(this.value)">
+                 <input class="btn btn-warning" type="button" name="" value="/" onclick="calculate(this.value)">
+
+             </div>
+
+              <div class="inputSection">
+                  <input class="btn btn-info" type="button" name="" value="1" onclick="calculate(this.value)">
+                  <input class="btn btn-info" type="button" name="" value="2" onclick="calculate(this.value)">
+                  <input class="btn btn-info" type="button" name="" value="3" onclick="calculate(this.value)">
+                  <input class="btn btn-warning" type="button" name="" value="+" onclick="calculate(this.value)">
+
+              </div>
+
+               <div class="inputSection">
+                   <input class="btn btn-info" type="button" name="" value="Del" id="del" onclick="display.value=null" >
+                   <input class="btn btn-info eval" type="button" name="btn" value="=" 
+                       onclick = "display.value = eval(display.value);">
+                   <input class="btn btn-warning" type="button" name="btn" value="-" onclick="calculate(this.value)">
+
+               </div>
+        </form>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
